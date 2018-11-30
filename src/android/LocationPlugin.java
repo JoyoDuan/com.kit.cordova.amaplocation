@@ -77,11 +77,11 @@ public class LocationPlugin extends CordovaPlugin {
 				// 时间
 				long time = amapLocation.getTime();
 				// 区域编码
-				String adcode = amapLocation.getAdcode();
+				String adcode = amapLocation.getAdCode();
 				// 获取城市名称
 				String city = amapLocation.getCity();
 				// 获取城市编码
-				String cityCode = amapLocation.getCityCode();
+				String citycode = amapLocation.getCityCode();
 
 				JSONObject jo = new JSONObject();
 				try {
@@ -98,8 +98,7 @@ public class LocationPlugin extends CordovaPlugin {
 					jo.put("time", time);
 					jo.put("adcode", adcode);
 					jo.put("city", city);
-					jo.put("cityCode", cityCode);
-
+					jo.put("citycode", citycode);
 				} catch (JSONException e) {
 					jo = null;
 					e.printStackTrace();
